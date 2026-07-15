@@ -818,6 +818,13 @@ footer p { margin: 4px 0; letter-spacing: .12em; }
   gap: 18px;
 }
 
+.travel-portrait-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
 .travel-middle-row {
   display: grid;
   grid-template-columns: 1.28fr .92fr;
@@ -838,6 +845,7 @@ footer p { margin: 4px 0; letter-spacing: .12em; }
 }
 
 @media (max-width: 760px) {
+  .travel-portrait-row,
   .travel-middle-row {
     grid-template-columns: 1fr;
   }

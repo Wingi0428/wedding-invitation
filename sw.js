@@ -1,4 +1,4 @@
-const CACHE = "wedding-invitation-v6";
+const CACHE = "wedding-invitation-v7";
 const ASSETS = [
   "./",
   "./index.html",
@@ -13,10 +13,10 @@ const ASSETS = [
   "./assets/wein-transport-map.webp",
   "./assets/couple-main.webp",
   "./assets/skytree.webp",
-  "./assets/universal.webp",
+  "./assets/S__88334353.jpg",
+  "./assets/S__88334351.jpg",
   "./assets/garden.webp",
   "./assets/qixi-cutout.webp",
-  "./assets/qixi-close.webp",
   "./assets/qixi-window.webp",
   "./assets/biscuit.webp",
   "./assets/boat.webp",
