@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5eee4" />
+  <meta name="description" content="辰銘與宛棋的婚禮電子喜帖，誠摯邀請您見證我們的重要時刻。" />
+  <meta property="og:title" content="辰銘 × 宛棋｜婚禮邀請" />
+  <meta property="og:description" content="承蒙一路疼愛，共享囍悅。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-cover.png" />
+  <title>辰銘 × 宛棋｜婚禮邀請</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="petals" aria-hidden="true"></div>
+
+  <header class="hero" id="home">
+    <nav class="topbar" aria-label="主要導覽">
+      <a class="brand" href="#home">C & W</a>
+      <button class="nav-toggle" type="button" aria-label="開啟選單" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#story">我們的故事</a>
+        <a href="#details">婚禮資訊</a>
+        <a href="#transport">交通停車</a>
+        <a href="#gallery">相簿</a>
+        <a href="#family">寵物家人</a>
+      </div>
+    </nav>
+
+    <div class="hero-content reveal">
+      <p class="eyebrow">WE ARE GETTING MARRIED</p>
+      <h1><span id="groomName">辰銘</span><i>×</i><span id="brideName">宛棋</span></h1>
+      <p class="jp">私たちは結婚しました！</p>
+      <div class="hero-line"></div>
+      <p class="hero-copy" id="heroMessage">承蒙一路疼愛，共享囍悅。</p>
+      <p class="date" id="heroDate">2026.07.24</p>
+      <a class="button primary" href="#details">查看婚禮資訊</a>
+    </div>
+
+    <a class="scroll-hint" href="#story" aria-label="向下瀏覽">
+      <span></span>Scroll
+    </a>
+  </header>
+
+  <main>
+    <section class="section intro reveal" id="story">
+      <p class="section-kicker">OUR STORY</p>
+      <h2>從相遇，到相守</h2>
+      <div class="story-grid">
+        <figure class="photo-frame portrait">
+          <a href="assets/couple-main.webp" target="_blank" rel="noopener" aria-label="開啟辰銘與宛棋合照">
+            <img src="assets/couple-main.webp" alt="辰銘與宛棋鏡前合照" />
+          </a>
+          <figcaption>What are you MBTI? · 我們的日常</figcaption>
+        </figure>
+        <div class="story-copy">
+          <span class="quote-mark">“</span>
+          <p>
+            我們一起走過平凡的日常，也收藏了旅途中的每一個片刻。如今，我們決定牽著彼此的手，走進人生的下一個篇章。
+          </p>
+          <p class="signature">辰銘 & 宛棋</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section countdown-section reveal" aria-labelledby="countdownTitle">
+      <p class="section-kicker">COUNTDOWN</p>
+      <h2 id="countdownTitle">距離幸福的日子</h2>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">000</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+      <p class="countdown-note" id="countdownNote">期待與您分享這一天。</p>
+    </section>
+
+    <section class="section details reveal" id="details">
+      <p class="section-kicker">WEDDING DAY</p>
+      <h2>婚禮資訊</h2>
+      <!-- <p class="section-lead">宴客日期、時間與地點可在 <code>config.js</code> 一次修改。</p> -->
+
+      <div class="info-cards">
+        <article class="info-card">
+          <div class="icon">日</div>
+          <h3>日期</h3>
+          <p id="eventDateText">2026 年 7 月 24 日・星期五</p>
+        </article>
+        <article class="info-card">
+          <div class="icon">時</div>
+          <h3>時間</h3>
+          <p id="eventTimeText">請帖時間待新人更新</p>
+        </article>
+        <article class="info-card">
+          <div class="icon">所</div>
+          <h3>地點</h3>
+          <p id="venueName">婚宴地點待新人更新</p>
+          <small id="venueAddress">請於 config.js 填入完整地址</small>
+        </article>
+      </div>
+
+      <div class="action-row">
+        <a class="button primary" id="mapButton" href="#" target="_blank" rel="noopener">開啟地圖</a>
+        <button class="button ghost" id="calendarButton" type="button">加入行事曆</button>
+      </div>
+    </section>
+
+    <section class="section timeline reveal" id="schedule">
+      <p class="section-kicker">SCHEDULE</p>
+      <h2>當日流程</h2>
+      <div class="timeline-list" id="timelineList"></div>
+    </section>
+
+
+    <section class="section transport reveal" id="transport">
+      <p class="section-kicker">TRANSPORTATION</p>
+      <h2>交通與停車資訊</h2>
+      <p class="section-lead">印月餐廳位於臺中市南屯區公益路二段 818 號，建議賓客預留停車與步行時間。</p>
+
+      <div class="transport-layout">
+        <figure class="transport-map-card">
+          <a href="assets/wein-transport-map.webp" target="_blank" rel="noopener" aria-label="開啟完整交通示意圖">
+            <img src="assets/wein-transport-map.webp" alt="印月餐廳停車場與周邊道路交通示意圖" loading="lazy" />
+          </a>
+          <figcaption>點擊圖片可放大查看交通及停車示意圖</figcaption>
+        </figure>
+
+        <div class="transport-copy">
+          <article class="transport-block">
+            <div class="transport-heading">
+              <span class="transport-symbol" aria-hidden="true">P</span>
+              <h3>停車資訊</h3>
+            </div>
+            <div class="transport-list" id="parkingList"></div>
+          </article>
+
+          <article class="transport-block">
+            <div class="transport-heading">
+              <span class="transport-symbol" aria-hidden="true">行</span>
+              <h3>交通資訊</h3>
+            </div>
+            <div class="transport-list" id="transitList"></div>
+          </article>
+
+          <a class="button primary transport-map-button" id="transportMapButton" href="#" target="_blank" rel="noopener">Google Maps 導航</a>
+        </div>
+      </div>
+    </section>
+
+        <section class="section gallery reveal" id="gallery">
+      <p class="section-kicker">TRAVEL MEMORIES</p>
+      <h2>我們的旅遊回憶</h2>
+      <div class="travel-grid travel-grid-custom">
+        <figure class="travel-card travel-card-wide">
+          <a href="assets/skytree.webp" target="_blank" rel="noopener" aria-label="開啟東京晴空塔合照">
+            <img src="assets/skytree.webp" alt="辰銘與宛棋穿著和服在東京晴空塔前合照" loading="lazy" />
+          </a>
+          <figcaption>Tokyo · Skytree</figcaption>
+        </figure>
+
+        <div class="travel-middle-row">
+          <figure class="travel-card travel-card-castle">
+            <a href="assets/universal-castle.webp" target="_blank" rel="noopener" aria-label="開啟環球影城城堡合照">
+              <img src="assets/universal-castle.webp" alt="辰銘與宛棋在環球影城城堡前合照" loading="lazy" />
+            </a>
+            <figcaption>Universal · Castle</figcaption>
+          </figure>
+          <figure class="travel-card travel-card-selfie">
+            <a href="assets/universal-selfie.webp" target="_blank" rel="noopener" aria-label="開啟超級任天堂世界自拍">
+              <img src="assets/universal-selfie.webp" alt="辰銘與宛棋在超級任天堂世界自拍" loading="lazy" />
+            </a>
+            <figcaption>Universal · Nintendo World</figcaption>
+          </figure>
+        </div>
+
+        <figure class="travel-card travel-card-wide">
+          <a href="assets/boat.webp" target="_blank" rel="noopener" aria-label="開啟保津川遊船合照">
+            <img src="assets/boat.webp" alt="辰銘與宛棋在保津川遊船上的合照" loading="lazy" />
+          </a>
+          <figcaption>Hozugawa · Boat Ride</figcaption>
+        </figure>
+      </div>
+      <p class="photo-tip">點擊照片可以開啟原尺寸瀏覽。</p>
+    </section>
+
+    <section class="section pet-family reveal" id="family">
+      <p class="section-kicker">OUR FAMILY</p>
+      <h2>我們的毛小孩</h2>
+      <p class="section-lead">一起陪伴我們走進人生新篇章的七喜與餅乾。</p>
+
+      <div class="pet-grid pet-grid-top">
+        <article class="pet-card pet-card-cat">
+          <div class="pet-photo pet-photo-cutout">
+            <a href="assets/qixi-cutout.webp" target="_blank" rel="noopener" aria-label="開啟七喜照片">
+              <img src="assets/qixi-cutout.webp" alt="貓咪七喜" loading="lazy" />
+            </a>
+          </div>
+          <div class="pet-copy">
+            <span>CAT</span>
+            <h3>七喜</h3>
+            <p>大家都說我圓滾滾，負責呼嚕嚕~ 療愈下班的爸爸媽媽!</p>
+          </div>
+        </article>
+
+        <article class="pet-card pet-card-dog pet-card-mirror">
+          <div class="pet-copy">
+            <span>DOG</span>
+            <h3>餅乾</h3>
+            <p>今年我 11 歲了，是最忠誠的家人!</p>
+          </div>
+          <div class="pet-photo pet-photo-dog-wide">
+            <a href="assets/biscuit.webp" target="_blank" rel="noopener" aria-label="開啟餅乾照片">
+              <img src="assets/biscuit.webp" alt="狗狗餅乾的大鼻子特寫" loading="lazy" />
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <figure class="ring-showcase">
+        <a href="assets/rings.webp" target="_blank" rel="noopener" aria-label="開啟婚戒照片">
+          <img src="assets/rings.webp" alt="婚戒與花束照片" loading="lazy" />
+        </a>
+        <figcaption>Wedding Rings</figcaption>
+      </figure>
+    </section>
+
+
+    <section class="section invitation reveal" id="invitation">
+      <div class="invitation-card">
+        <h2>敬邀您的蒞臨</h2>
+      </div>
+    </section>
+
+
+    <section class="section blessing reveal">
+      <p class="section-kicker">WITH LOVE</p>
+      <blockquote>承蒙關愛與祝福，共沐良辰囍悅。</blockquote>
+      <p>期待在這個重要的日子裡，與您相見。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong id="footerNames">辰銘 × 宛棋</strong></p>
+    <p id="footerDate">2026.07.24</p>
+    <p class="copyright">Designed with love · Original wedding invitation template</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

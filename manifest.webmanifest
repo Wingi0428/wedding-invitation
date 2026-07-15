@@ -1,0 +1,21 @@
+{
+  "name": "辰銘 × 宛棋｜婚禮邀請",
+  "short_name": "婚禮邀請",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8f3eb",
+  "theme_color": "#f5eee4",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
